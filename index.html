@@ -3,44 +3,35 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Claudio Soriano • Data Science & Agro Analytics</title>
-  <meta name="description" content="Projetos de ciência de dados aplicados a agro, micrometeorologia, fluxos EC, ML e dashboards." />
+  <title>zSoriano • Data Science & Agro Analytics</title>
+  <meta name="description" content="Projetos públicos de ciência de dados, micrometeorologia (EC), ML e dashboards." />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🌾</text></svg>">
   <style>
-    :root{
-      --bg:#0b0f17; --card:#0f1522; --muted:#9fb3c8; --text:#e6eef8; --brand:#66d9ff; --accent:#a0ffb3;
-    }
-    *{box-sizing:border-box}
-    body{margin:0; font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial; background:var(--bg); color:var(--text)}
-    a{color:var(--brand); text-decoration:none}
-    a:hover{opacity:.9}
-    .wrap{max-width:1100px; margin:0 auto; padding:24px}
-    header{display:flex; flex-wrap:wrap; gap:16px; align-items:center; justify-content:space-between; margin:24px 0}
-    .title{font-weight:700; font-size:1.6rem}
-    .subtitle{color:var(--muted)}
-    .hero{display:grid; gap:8px; margin:8px 0 24px}
-    .hero p{margin:0}
+    :root{--bg:#0b0f17;--card:#0f1522;--muted:#9fb3c8;--text:#e6eef8;--brand:#66d9ff;}
+    *{box-sizing:border-box} body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Arial;background:var(--bg);color:var(--text)}
+    a{color:var(--brand);text-decoration:none} a:hover{opacity:.9}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    header{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin:24px 0}
+    .title{font-weight:700;font-size:1.6rem} .subtitle{color:var(--muted)}
     h2{margin:24px 0 12px}
-    .grid{display:grid; gap:16px; grid-template-columns:repeat(auto-fill, minmax(260px,1fr))}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.06); border-radius:16px; padding:16px; transition:transform .2s ease, box-shadow .2s ease}
-    .card:hover{transform:translateY(-2px); box-shadow:0 8px 30px rgba(0,0,0,.25)}
-    .thumb{width:100%; aspect-ratio:16/9; border-radius:12px; object-fit:cover; background:#111; margin-bottom:12px; border:1px solid rgba(255,255,255,.06)}
-    .tag{display:inline-block; font-size:.75rem; padding:2px 8px; border-radius:999px; border:1px solid rgba(255,255,255,.12); color:var(--muted); margin-right:6px}
-    .card h3{margin:.2rem 0 .4rem; font-size:1.05rem}
-    .card p{margin:.2rem 0 .6rem; color:var(--muted)}
-    footer{margin:40px 0; color:var(--muted); text-align:center; font-size:.9rem}
-    .cta{display:inline-flex; align-items:center; gap:8px; background:rgba(102,217,255,.1); color:var(--brand); border:1px solid rgba(102,217,255,.3); padding:10px 14px; border-radius:10px}
-    .cta:hover{background:rgba(102,217,255,.14)}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:16px;transition:transform .2s ease,box-shadow .2s ease}
+    .card:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,0,0,.25)}
+    .thumb{width:100%;aspect-ratio:16/9;border-radius:12px;object-fit:cover;background:#111;margin-bottom:12px;border:1px solid rgba(255,255,255,.06)}
+    .tag{display:inline-block;font-size:.75rem;padding:2px 8px;border-radius:999px;border:1px solid rgba(255,255,255,.12);color:var(--muted);margin-right:6px}
+    .card h3{margin:.2rem 0 .4rem;font-size:1.05rem} .card p{margin:.2rem 0 .6rem;color:var(--muted)}
     .links a{margin-right:12px}
-    .divider{height:1px; background:rgba(255,255,255,.08); margin:24px 0}
+    footer{margin:40px 0;color:var(--muted);text-align:center;font-size:.9rem}
+    .cta{display:inline-flex;align-items:center;gap:8px;background:rgba(102,217,255,.1);color:var(--brand);border:1px solid rgba(102,217,255,.3);padding:10px 14px;border-radius:10px}
+    .cta:hover{background:rgba(102,217,255,.14)}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
       <div>
-        <div class="title">Claudio Soriano • Data Science & Agro Analytics</div>
-        <div class="subtitle">Micrometeorologia • EC Flux • ML • Dashboards</div>
+        <div class="title">zSoriano • Data Science & Agro Analytics</div>
+        <div class="subtitle">Micrometeorologia (EC) • ML • Dashboards • Agro</div>
       </div>
       <nav class="links">
         <a class="cta" href="mailto:seuemail@exemplo.com">Contato</a>
@@ -49,109 +40,59 @@
       </nav>
     </header>
 
-    <section class="hero">
-      <p>Projetos em <strong>partição de ET</strong> (TEA, Pérez-Priego, uWUE), <strong>ciência de dados</strong> para agro e <strong>dashboards</strong> operacionais.</p>
-      <p>Foco em <strong>resultados reprodutíveis</strong>, <strong>boas práticas</strong> e <strong>documentação</strong>.</p>
+    <section>
+      <p>Portfólio dos meus projetos públicos. Alguns trabalhos adicionais estão em repositórios privados.</p>
     </section>
 
-    <h2>Projetos destacados</h2>
-    <section class="grid" id="featured">
-      <!-- Preencha os links "Código" / "Demo" com seus URLs reais -->
-      <article class="card">
-        <img class="thumb" src="img/cep.png" alt="Dashboard CEP">
-        <span class="tag">Streamlit</span><span class="tag">Estatística</span>
-        <h3>CEP: Cartas X̄-R com PDF e Sumário</h3>
-        <p>Sistema completo de Controle Estatístico de Processo: autenticação, exportação consolidada em PDF, sumário com links e layout corporativo.</p>
-        <p><a href="https://github.com/zSoriano/cep-streamlit">Código</a> · <a href="https://zSoriano-cep.streamlit.app">Demo</a></p>
-      </article>
-
-      <article class="card">
-        <img class="thumb" src="img/tea.png" alt="Partitioning ET">
-        <span class="tag">Python</span><span class="tag">EC Flux</span>
-        <h3>Partitioning ET: TEA & Pérez-Priego</h3>
-        <p>Execução comparativa em dados EC (Colby, KS), avaliação de T/ET, incerteza e discussão metodológica (uWUE/TEA/PP).</p>
-        <p><a href="https://github.com/zSoriano/et-partitioning">Código</a></p>
-      </article>
-
-      <article class="card">
-        <img class="thumb" src="img/soil.png" alt="pH vs Al ML">
-        <span class="tag">Sklearn</span><span class="tag">GAM</span>
-        <h3>Solo: pH × Alumínio (ML + Relatório)</h3>
-        <p>Modelos regressivos e classificação; GAM, RF, GBM; exportação em PDF; app interativo (Streamlit).</p>
-        <p><a href="https://github.com/zSoriano/soil-ml">Código</a></p>
-      </article>
-
-      <article class="card">
-        <img class="thumb" src="img/almox.png" alt="Almoxarifado Químico">
-        <span class="tag">Streamlit</span><span class="tag">CRUD</span>
-        <h3>Almoxarifado Químico</h3>
-        <p>Gestão de reagentes, soluções, KPIs e histórico; PDF com cabeçalho/rodapé; autenticação e layout corporativo.</p>
-        <p><a href="https://github.com/zSoriano/almoxarifado-quimico">Código</a></p>
-      </article>
-
-      <article class="card">
-        <img class="thumb" src="img/safe.png" alt="Painel SAFE">
-        <span class="tag">Dashboard</span><span class="tag">KPIs</span>
-        <h3>Painel SAFE – Agrorobótica</h3>
-        <p>KPIs operacionais e de qualidade; filtros, exportações e storytelling visual para diretoria.</p>
-        <p><a href="https://github.com/zSoriano/painel-safe">Código</a></p>
-      </article>
-
-      <article class="card">
-        <img class="thumb" src="img/ndvi.png" alt="NDVI/NMDI">
-        <span class="tag">EO</span><span class="tag">Python</span>
-        <h3>Pipeline NDVI/NMDI (Sentinel/MODIS)</h3>
-        <p>Extração automática de índices para grade de pontos; automação e validação com QA.</p>
-        <p><a href="https://github.com/zSoriano/ndvi-nmdi-pipeline">Código</a></p>
-      </article>
-    </section>
-
-    <div class="divider"></div>
-
-    <h2>Repositórios públicos (auto)</h2>
+    <h2>Repositórios públicos</h2>
     <section class="grid" id="autoGrid">
-      <!-- Preenchido via GitHub API -->
+      <!-- preenchido via GitHub API -->
     </section>
 
-    <footer>
-      © <span id="y"></span> • Portfólio hospedado no GitHub Pages
-    </footer>
+    <footer>© <span id="y"></span> • Hospedado no GitHub Pages</footer>
   </div>
 
   <script>
-    // 1) Troque para o seu username real:
     const GH_USER = "zSoriano";
-
-    // 2) Render ano no rodapé
     document.getElementById("y").textContent = new Date().getFullYear();
 
-    // 3) Fallback dinâmico: puxa repositórios públicos
     async function loadRepos(){
-      if(!GH_USER || GH_USER === "zSoriano") return;
       try{
-        const res = await fetch(`https://api.github.com/users/${GH_USER}/repos?per_page=100&sort=updated`);
+        const res = await fetch(`https://api.github.com/users/${GH_USER}/repos?per_page=100&sort=updated`, {
+          headers:{ "Accept":"application/vnd.github+json" }
+        });
         const data = await res.json();
         const grid = document.getElementById("autoGrid");
-        if(!Array.isArray(data)) return;
+        if(!Array.isArray(data)){ grid.innerHTML = "<p>Não foi possível carregar os repositórios.</p>"; return; }
 
+        // ordena por atualização recente e dá leve prioridade a repositórios com homepage (demo)
         data
           .filter(r => !r.fork)
+          .sort((a,b) => (b.homepage?1:0) - (a.homepage?1:0) || new Date(b.pushed_at) - new Date(a.pushed_at))
           .forEach(r => {
-            const topics = (r.topics || []).slice(0,3);
+            const topics = (r.topics || []).slice(0,4);
             const el = document.createElement("article");
             el.className = "card";
             el.innerHTML = `
               <img class="thumb" src="https://opengraph.githubassets.com/1/${GH_USER}/${r.name}" alt="${r.name}">
               ${topics.map(t=>`<span class="tag">${t}</span>`).join("")}
-              <h3>${r.name.replace(/-/g, " ")}</h3>
+              <h3>${r.name.replace(/-/g," ")}</h3>
               <p>${r.description ? r.description : "Sem descrição."}</p>
-              <p><a href="${r.html_url}" target="_blank" rel="noopener">Código</a>${
-                r.homepage ? ` · <a href="${r.homepage}" target="_blank" rel="noopener">Demo</a>` : ""
-              }</p>
+              <p>
+                <a href="${r.html_url}" target="_blank" rel="noopener">Código</a>
+                ${r.homepage ? `· <a href="${r.homepage}" target="_blank" rel="noopener">Demo</a>` : ""}
+              </p>
             `;
             grid.appendChild(el);
           });
-      } catch(e){ console.warn(e); }
+
+        if(!grid.children.length){
+          grid.innerHTML = "<p>Nenhum repositório público encontrado.</p>";
+        }
+      } catch(e){
+        console.warn(e);
+        document.getElementById("autoGrid").innerHTML = "<p>Falha ao carregar repositórios.</p>";
+      }
     }
     loadRepos();
   </script>
