@@ -4,26 +4,33 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>zSoriano • Data Science & Agro Analytics</title>
-  <meta name="description" content="Projetos públicos de ciência de dados, micrometeorologia (EC), ML e dashboards." />
+  <meta name="description" content="Projetos públicos e privados (destaques) em ciência de dados, micrometeorologia (EC), ML e dashboards." />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🌾</text></svg>">
   <style>
     :root{--bg:#0b0f17;--card:#0f1522;--muted:#9fb3c8;--text:#e6eef8;--brand:#66d9ff;}
-    *{box-sizing:border-box} body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Arial;background:var(--bg);color:var(--text)}
-    a{color:var(--brand);text-decoration:none} a:hover{opacity:.9}
+    *{box-sizing:border-box}
+    body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Arial;background:var(--bg);color:var(--text)}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{opacity:.9}
     .wrap{max-width:1100px;margin:0 auto;padding:24px}
     header{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin:24px 0}
-    .title{font-weight:700;font-size:1.6rem} .subtitle{color:var(--muted)}
+    .title{font-weight:700;font-size:1.6rem}
+    .subtitle{color:var(--muted)}
     h2{margin:24px 0 12px}
     .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
     .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:16px;transition:transform .2s ease,box-shadow .2s ease}
     .card:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,0,0,.25)}
     .thumb{width:100%;aspect-ratio:16/9;border-radius:12px;object-fit:cover;background:#111;margin-bottom:12px;border:1px solid rgba(255,255,255,.06)}
     .tag{display:inline-block;font-size:.75rem;padding:2px 8px;border-radius:999px;border:1px solid rgba(255,255,255,.12);color:var(--muted);margin-right:6px}
-    .card h3{margin:.2rem 0 .4rem;font-size:1.05rem} .card p{margin:.2rem 0 .6rem;color:var(--muted)}
+    .card h3{margin:.2rem 0 .4rem;font-size:1.05rem}
+    .card p{margin:.2rem 0 .6rem;color:var(--muted)}
     .links a{margin-right:12px}
     footer{margin:40px 0;color:var(--muted);text-align:center;font-size:.9rem}
     .cta{display:inline-flex;align-items:center;gap:8px;background:rgba(102,217,255,.1);color:var(--brand);border:1px solid rgba(102,217,255,.3);padding:10px 14px;border-radius:10px}
     .cta:hover{background:rgba(102,217,255,.14)}
+    .badges{display:flex;flex-wrap:wrap;gap:6px;margin:.25rem 0 .5rem}
+    .badge{border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:2px 8px;font-size:.75rem;color:var(--muted)}
+    .divider{height:1px;background:rgba(255,255,255,.08);margin:24px 0}
   </style>
 </head>
 <body>
@@ -41,9 +48,59 @@
     </header>
 
     <section>
-      <p>Portfólio dos meus projetos públicos. Alguns trabalhos adicionais estão em repositórios privados.</p>
+      <p>Portfólio dos meus projetos. <em>Alguns destaques são privados</em> (sem link de código), mas incluem descrição e, quando disponível, link de demo.</p>
     </section>
 
+    <!-- PROJETOS DESTACADOS (PRIVADOS) -->
+    <h2>Projetos destacados</h2>
+    <section class="grid">
+      <!-- 1) correlacoes-arvore-decisao-agrorobotica -->
+      <article class="card">
+        <img class="thumb" src="img/agrorobotica-correlacoes.png" alt="Correlações & Árvore de Decisão">
+        <div class="badges">
+          <span class="badge">Python</span><span class="badge">Sklearn</span><span class="badge">Agro</span>
+        </div>
+        <h3>Correlação & Decision Tree – Agrorobótica</h3>
+        <p>Pipeline de análise de correlações e modelos de árvore de decisão para variáveis agronômicas, explicabilidade (importâncias, SHAP) e relatório automatizado.</p>
+        <p>
+          <!-- Se tiver demo pública, coloque a URL abaixo -->
+          <!-- <a href="https://SEU-LINK-DE-DEMO.com" target="_blank" rel="noopener">Demo</a> -->
+          <em>Repositório privado</em>
+        </p>
+      </article>
+
+      <!-- 2) almoxarifado -->
+      <article class="card">
+        <img class="thumb" src="img/almoxarifado.png" alt="Almoxarifado">
+        <div class="badges">
+          <span class="badge">Streamlit</span><span class="badge">CRUD</span><span class="badge">Relatórios</span>
+        </div>
+        <h3>Almoxarifado • Gestão de Reagentes</h3>
+        <p>App operacional com cadastro de reagentes/soluções, inventário, histórico e KPIs; exportação em PDF com cabeçalho/rodapé e trilhas de auditoria.</p>
+        <p>
+          <!-- <a href="https://SEU-LINK-DE-DEMO.com" target="_blank" rel="noopener">Demo</a> -->
+          <em>Repositório privado</em>
+        </p>
+      </article>
+
+      <!-- 3) padronizacao_laudo_exe -->
+      <article class="card">
+        <img class="thumb" src="img/padronizacao-laudo.png" alt="Padronização de Laudos">
+        <div class="badges">
+          <span class="badge">Python</span><span class="badge">Automação</span><span class="badge">PDF</span>
+        </div>
+        <h3>Padronização de Laudos (EXE)</h3>
+        <p>Ferramenta para padronizar laudos técnicos com modelos de template, validação de campos e geração automatizada de arquivos finais para envio.</p>
+        <p>
+          <!-- <a href="https://SEU-LINK-DE-DEMO.com" target="_blank" rel="noopener">Demo</a> -->
+          <em>Repositório privado</em>
+        </p>
+      </article>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- REPOS PÚBLICOS (AUTO) -->
     <h2>Repositórios públicos</h2>
     <section class="grid" id="autoGrid">
       <!-- preenchido via GitHub API -->
@@ -65,7 +122,6 @@
         const grid = document.getElementById("autoGrid");
         if(!Array.isArray(data)){ grid.innerHTML = "<p>Não foi possível carregar os repositórios.</p>"; return; }
 
-        // ordena por atualização recente e dá leve prioridade a repositórios com homepage (demo)
         data
           .filter(r => !r.fork)
           .sort((a,b) => (b.homepage?1:0) - (a.homepage?1:0) || new Date(b.pushed_at) - new Date(a.pushed_at))
