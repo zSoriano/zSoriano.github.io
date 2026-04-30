@@ -205,6 +205,18 @@
       border-radius: var(--radius);
       background: rgba(17, 29, 39, 0.86);
       box-shadow: var(--shadow);
+      transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .intro-card:hover,
+    .card:hover,
+    .timeline-item:hover,
+    .contact-panel:hover,
+    .metric:hover {
+      border-color: rgba(77, 212, 172, 0.68);
+      background: rgba(20, 35, 45, 0.96);
+      box-shadow: 0 22px 55px rgba(0, 0, 0, 0.36), 0 0 0 1px rgba(77, 212, 172, 0.1);
+      transform: translateY(-3px);
     }
 
     .intro-card {
@@ -249,9 +261,13 @@
 
     .metric {
       border-left: 3px solid var(--accent);
+      border-top: 1px solid rgba(255, 255, 255, 0.04);
+      border-right: 1px solid rgba(255, 255, 255, 0.04);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
       min-height: 86px;
       padding: 12px 14px;
       background: rgba(255, 255, 255, 0.03);
+      transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
     }
 
     .metric strong,
@@ -325,7 +341,7 @@
     }
 
     .skill-card {
-      min-height: 202px;
+      min-height: 228px;
     }
 
     .skill-title {
@@ -357,6 +373,24 @@
       font-size: 0.82rem;
       font-weight: 650;
       padding: 5px 9px;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .skill-chip {
+      border: 1px solid rgba(77, 212, 172, 0.22);
+      border-radius: 4px;
+      background: rgba(77, 212, 172, 0.08);
+      color: var(--muted-strong);
+      font-size: 0.82rem;
+      font-weight: 650;
+      line-height: 1.35;
+      padding: 7px 9px;
     }
 
     .project-card {
@@ -634,78 +668,93 @@
       <div class="container">
         <div class="section-header">
           <span class="section-kicker">Habilidades</span>
-          <h2 id="habilidades-title">Competências técnicas e analíticas.</h2>
+          <h2 id="habilidades-title">Ferramentas e competências técnicas.</h2>
           <p>
-            Conjunto de ferramentas e práticas usadas para transformar dados brutos em produtos analíticos
-            documentados, rastreáveis e úteis para equipes técnicas e de negócio.
+            Stack organizada por tipo de entrega: análise, engenharia de dados, machine learning, visualização,
+            produtos analíticos e pesquisa aplicada.
           </p>
         </div>
 
         <div class="skills-grid">
           <article class="card skill-card">
+            <h3 class="skill-title"><span class="marker"></span>Linguagens e Bibliotecas</h3>
+            <p>Base principal para análise, automação, modelagem e visualização de dados.</p>
+            <div class="skill-list">
+              <span class="skill-chip">Python</span>
+              <span class="skill-chip">R</span>
+              <span class="skill-chip">SQL</span>
+              <span class="skill-chip">Pandas</span>
+              <span class="skill-chip">NumPy</span>
+              <span class="skill-chip">Scikit-learn</span>
+              <span class="skill-chip">Matplotlib</span>
+              <span class="skill-chip">Plotly</span>
+            </div>
+          </article>
+
+          <article class="card skill-card">
             <h3 class="skill-title"><span class="marker"></span>Dados e ETL</h3>
-            <p>Extração, limpeza, padronização e integração de dados de planilhas, PDFs, APIs e bancos relacionais.</p>
-            <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">SQL</span>
-              <span class="tag">Pandas</span>
-              <span class="tag">NumPy</span>
-              <span class="tag">APIs</span>
+            <p>Integração de dados heterogêneos, validação e padronização para uso operacional.</p>
+            <div class="skill-list">
+              <span class="skill-chip">ETL / ELT</span>
+              <span class="skill-chip">APIs</span>
+              <span class="skill-chip">Excel</span>
+              <span class="skill-chip">Google Sheets</span>
+              <span class="skill-chip">PDF extraction</span>
+              <span class="skill-chip">Validação</span>
+              <span class="skill-chip">Padronização</span>
             </div>
           </article>
 
           <article class="card skill-card">
             <h3 class="skill-title"><span class="marker"></span>Machine Learning</h3>
-            <p>Preparação de features, treinamento, avaliação e uso de modelos para recomendação e classificação.</p>
-            <div class="tags">
-              <span class="tag">Scikit-learn</span>
-              <span class="tag">Feature Engineering</span>
-              <span class="tag">Validação</span>
-              <span class="tag">Métricas</span>
+            <p>Modelagem supervisionada, avaliação de modelos e apoio a recomendações técnicas.</p>
+            <div class="skill-list">
+              <span class="skill-chip">Regressão</span>
+              <span class="skill-chip">Classificação</span>
+              <span class="skill-chip">Random Forest</span>
+              <span class="skill-chip">Decision Tree</span>
+              <span class="skill-chip">Feature Engineering</span>
+              <span class="skill-chip">Métricas</span>
             </div>
           </article>
 
           <article class="card skill-card">
             <h3 class="skill-title"><span class="marker"></span>Dashboards e Produtos</h3>
-            <p>Construção de painéis, aplicações analíticas e interfaces para acompanhamento de indicadores.</p>
-            <div class="tags">
-              <span class="tag">Dashboards</span>
-              <span class="tag">Produtos de Dados</span>
-              <span class="tag">Automação</span>
-              <span class="tag">Relatórios</span>
+            <p>Interfaces analíticas, relatórios automatizados e aplicações para equipes técnicas.</p>
+            <div class="skill-list">
+              <span class="skill-chip">Streamlit</span>
+              <span class="skill-chip">Power BI</span>
+              <span class="skill-chip">Dashboards</span>
+              <span class="skill-chip">FastAPI</span>
+              <span class="skill-chip">Next.js</span>
+              <span class="skill-chip">ReportLab</span>
             </div>
           </article>
 
           <article class="card skill-card">
-            <h3 class="skill-title"><span class="marker"></span>Qualidade de Dados</h3>
-            <p>Regras de consistência, checagem de dados, rastreabilidade e organização de processos confiáveis.</p>
-            <div class="tags">
-              <span class="tag">Data Quality</span>
-              <span class="tag">Validação</span>
-              <span class="tag">Auditoria</span>
-              <span class="tag">Documentação</span>
+            <h3 class="skill-title"><span class="marker"></span>Bancos, Deploy e Operação</h3>
+            <p>Persistência, publicação de aplicações e organização de ambientes de entrega.</p>
+            <div class="skill-list">
+              <span class="skill-chip">PostgreSQL</span>
+              <span class="skill-chip">MySQL</span>
+              <span class="skill-chip">SQL Server</span>
+              <span class="skill-chip">SQLite</span>
+              <span class="skill-chip">Vercel</span>
+              <span class="skill-chip">Render</span>
+              <span class="skill-chip">Docker</span>
             </div>
           </article>
 
           <article class="card skill-card">
-            <h3 class="skill-title"><span class="marker"></span>Pesquisa e Análise</h3>
-            <p>Análise de dados ambientais, séries temporais e interpretação técnica de resultados quantitativos.</p>
-            <div class="tags">
-              <span class="tag">Séries Temporais</span>
-              <span class="tag">Estatística</span>
-              <span class="tag">Dados Ambientais</span>
-              <span class="tag">Análise Exploratória</span>
-            </div>
-          </article>
-
-          <article class="card skill-card">
-            <h3 class="skill-title"><span class="marker"></span>Comunicação Técnica</h3>
-            <p>Tradução de análises em documentação, relatórios e entregas claras para públicos técnicos e não técnicos.</p>
-            <div class="tags">
-              <span class="tag">Documentação</span>
-              <span class="tag">Relatórios</span>
-              <span class="tag">Visualização</span>
-              <span class="tag">Alinhamento Técnico</span>
+            <h3 class="skill-title"><span class="marker"></span>Pesquisa e Comunicação</h3>
+            <p>Análise quantitativa, interpretação técnica e documentação para tomada de decisão.</p>
+            <div class="skill-list">
+              <span class="skill-chip">Séries Temporais</span>
+              <span class="skill-chip">Estatística</span>
+              <span class="skill-chip">Dados Ambientais</span>
+              <span class="skill-chip">Sensoriamento Remoto</span>
+              <span class="skill-chip">Documentação</span>
+              <span class="skill-chip">Relatórios</span>
             </div>
           </article>
         </div>
