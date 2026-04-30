@@ -717,82 +717,83 @@
 
         <div class="projects-grid">
           <article class="card project-card">
-            <div class="project-number">Projeto 01</div>
-            <h3>Calculadora de Emissões de Carbono</h3>
-            <div class="project-block">
-              <strong>Aplicação</strong>
-              <p>
-                Ferramenta para organizar dados agrícolas e apoiar estimativas de emissões de carbono a partir de
-                informações operacionais preenchidas por clientes e equipes técnicas.
-              </p>
-            </div>
-            <div class="project-block">
-              <strong>Base técnica</strong>
-              <p>Python, Pandas, NumPy, ETL, Excel e validação de dados.</p>
-            </div>
-            <div class="project-block">
-              <strong>Resultado esperado</strong>
-              <p>Processo mais organizado para consolidar entradas, aplicar regras de consistência e preparar análises auditáveis.</p>
-            </div>
-          </article>
-
-          <article class="card project-card">
             <div class="project-number">Projeto 02</div>
-            <h3>Automação de Relatórios Agronômicos</h3>
+            <h3>Sistema de Laudos LIBS</h3>
             <div class="project-block">
               <strong>Aplicação</strong>
               <p>
-                Pipeline para consolidar dados vindos de planilhas, PDFs e bases de clientes, gerando relatórios
-                agronômicos com menor dependência de etapas manuais.
+                Aplicação para transformar planilhas brutas de análise de solo por LIBS em laudos internos
+                padronizados, com etapas de pré-processamento, preenchimento, interpolação e exportação em Excel.
               </p>
             </div>
             <div class="project-block">
               <strong>Base técnica</strong>
-              <p>Python, Pandas, Google Sheets, APIs, Excel e automação de relatórios.</p>
+              <p>Python, Streamlit, Pandas, openpyxl, XlsxWriter, autenticação com bcrypt, testes com pytest e exportação Excel.</p>
             </div>
             <div class="project-block">
               <strong>Resultado esperado</strong>
-              <p>Padronização do fluxo de geração de relatórios e maior rastreabilidade entre dados de entrada e saída.</p>
-            </div>
-          </article>
-
-          <article class="card project-card">
-            <div class="project-number">Projeto 03</div>
-            <h3>Dashboard Operacional em Tempo Real</h3>
-            <div class="project-block">
-              <strong>Aplicação</strong>
-              <p>
-                Dashboard para centralizar indicadores operacionais, acompanhar dados agrícolas e facilitar a leitura
-                de informações em uma visão única para acompanhamento interno.
-              </p>
-            </div>
-            <div class="project-block">
-              <strong>Base técnica</strong>
-              <p>SQL, Python, APIs, dashboards, visualização de dados e rotinas de atualização.</p>
-            </div>
-            <div class="project-block">
-              <strong>Resultado esperado</strong>
-              <p>Melhor acompanhamento das informações operacionais e redução de consultas dispersas em diferentes arquivos.</p>
+              <p>Redução de etapas manuais na geração de laudos, maior padronização das planilhas e rastreabilidade entre dados de entrada e saída.</p>
             </div>
           </article>
 
           <article class="card project-card">
             <div class="project-number">Projeto 04</div>
-            <h3>Modelos para Recomendação Agrícola</h3>
+            <h3>Controle Químico — Almoxarifado</h3>
             <div class="project-block">
               <strong>Aplicação</strong>
               <p>
-                Modelos analíticos para apoiar recomendações agrícolas usando dados históricos, variáveis de campo e
-                regras técnicas definidas no contexto do negócio.
+                Sistema operacional para controle de estoque de reagentes químicos de laboratório, incluindo cadastro
+                de itens, lotes, movimentações, consumo, soluções, alertas e exportação de dados.
               </p>
             </div>
             <div class="project-block">
               <strong>Base técnica</strong>
-              <p>Python, Scikit-learn, Pandas, machine learning, validação e análise exploratória.</p>
+              <p>FastAPI, SQLAlchemy, Pydantic, SQLite/PostgreSQL, Next.js, TypeScript, Tailwind CSS, MUI, Recharts e Docker.</p>
             </div>
             <div class="project-block">
               <strong>Resultado esperado</strong>
-              <p>Base analítica para suporte à decisão técnica e evolução de recomendações orientadas por dados.</p>
+              <p>Centralização do inventário, rastreabilidade de movimentações e apoio ao controle de validade, criticidade e consumo de reagentes.</p>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-number">Projeto 05</div>
+            <h3>Calculadora de Adubação 2.0</h3>
+            <div class="project-block">
+              <strong>Aplicação</strong>
+              <p>
+                Ferramenta web para gerar recomendações de calagem, gessagem, fósforo e potássio a partir de planilhas
+                de análise de solo e parâmetros agronômicos configuráveis.
+              </p>
+            </div>
+            <div class="project-block">
+              <strong>Base técnica</strong>
+              <p>Python, FastAPI, Pandas, motor de regras agronômicas, Next.js, React, MUI, Vercel, Render e exportação Excel/CSV.</p>
+            </div>
+            <div class="project-block">
+              <strong>Resultado esperado</strong>
+              <p>Padronização de recomendações técnicas, geração de demandas por talhão e organização do catálogo de fontes e produtos comerciais.</p>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-number">Projeto 07</div>
+            <h3>Calculadora de Emissões de GEE</h3>
+            <div class="project-block">
+              <strong>Aplicação</strong>
+              <p>
+                Aplicação para quantificar emissões de gases de efeito estufa em sistemas agrícolas e pecuários,
+                com upload de planilhas, validação automática, cálculo detalhado por metodologia IPCC, dashboards de
+                KPIs e simulação de cenários futuros.
+              </p>
+            </div>
+            <div class="project-block">
+              <strong>Base técnica</strong>
+              <p>Python, Streamlit, Pandas, Altair, openpyxl, ReportLab, pytest, cache com Streamlit e exportação CSV, Excel e PDF.</p>
+            </div>
+            <div class="project-block">
+              <strong>Resultado esperado</strong>
+              <p>Automação do cálculo de emissões, visualização de resultados por cliente, fazenda, cultura e safra, além de relatórios auditáveis para análise técnica.</p>
             </div>
           </article>
         </div>
@@ -811,7 +812,8 @@
           <span class="section-kicker">Experiência</span>
           <h2 id="experiencia-title">Experiência profissional e pesquisa.</h2>
           <p>
-            Trajetória conectando análise de dados, automação, produtos analíticos e interpretação de dados ambientais.
+            Trajetória conectando ciência de dados aplicada ao agronegócio, análise climática, automação,
+            produtos analíticos e pesquisa em meteorologia aplicada.
           </p>
         </div>
 
@@ -819,31 +821,65 @@
           <article class="timeline-item">
             <div class="timeline-label">Jul/2025 - atual</div>
             <div>
-              <h3>Data Scientist — Agrorobótica</h3>
+              <h3>Cientista de Dados — Agrorobótica</h3>
               <p>
-                Desenvolvimento de soluções de dados aplicadas ao agronegócio, com foco em ETL, automação de relatórios,
-                dashboards, APIs, validação de dados e modelos analíticos.
+                Desenvolvimento de produtos de dados e soluções analíticas para agronegócio, contabilização de carbono
+                e suporte à decisão operacional.
               </p>
               <ul>
-                <li>Integração de dados de campo, planilhas, PDFs, APIs e bases estruturadas.</li>
-                <li>Automação de rotinas analíticas e relatórios para processos agrícolas.</li>
-                <li>Criação de dashboards e fluxos de validação para apoiar decisões operacionais.</li>
+                <li>Gestão de projetos de dados para clientes do setor agrícola, com fluxos complexos e dados multifonte.</li>
+                <li>Desenvolvimento de pipelines ETL em Python para extração, padronização, validação e controle de qualidade.</li>
+                <li>Criação de soluções analíticas, modelos de machine learning, dashboards em tempo real e automações internas.</li>
+                <li>Uso de Streamlit, Vercel e Render para entregar ferramentas analíticas e relatórios automatizados.</li>
               </ul>
             </div>
           </article>
 
           <article class="timeline-item">
-            <div class="timeline-label">Instituição: Agrorobótica</div>
+            <div class="timeline-label">2020 - 2023</div>
             <div>
-              <h3>Experiência acadêmica e pesquisa em dados ambientais</h3>
+              <h3>Analista de Dados Climáticos e Agrícolas — BASF</h3>
               <p>
-                Experiência com análise de dados ambientais e séries temporais, incluindo organização de bases,
-                exploração estatística, visualização e comunicação técnica de resultados.
+                Análise de dados climáticos e agrícolas para apoio à tomada de decisão agronômica e operacional em
+                diferentes culturas e regiões do Brasil.
               </p>
               <ul>
-                <li>Processamento e análise de séries temporais ambientais.</li>
-                <li>Estruturação de bases para investigação quantitativa.</li>
-                <li>Preparação de resultados para relatórios, apresentações ou documentos técnicos.</li>
+                <li>Execução de análises exploratórias em bases meteorológicas e agrícolas em escala nacional.</li>
+                <li>Produção recorrente de relatórios analíticos com insights para uso técnico e operacional.</li>
+                <li>Desenvolvimento de dashboards em Power BI e Streamlit para visualização e acompanhamento de indicadores.</li>
+                <li>Uso de Python, Pandas e Matplotlib para processamento, análise e visualização de dados.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-label">2021 - atual</div>
+            <div>
+              <h3>Pesquisador de Doutorado — Universidade Federal de Viçosa</h3>
+              <p>
+                Pesquisa em Meteorologia Aplicada com foco em dados micrometeorológicos, sensoriamento remoto e métodos
+                de balanço de energia.
+              </p>
+              <ul>
+                <li>Automação de workflows de processamento de dados micrometeorológicos em Python.</li>
+                <li>Análises de particionamento da evapotranspiração integrando sensoriamento remoto e balanço de energia.</li>
+                <li>Produção de documentação técnica e relatórios científicos com práticas de pesquisa reprodutível.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-label">2019 - 2021</div>
+            <div>
+              <h3>Pesquisador de Mestrado — Universidade Federal de Viçosa</h3>
+              <p>
+                Pesquisa em Meteorologia Aplicada com análise de séries temporais, modelagem estatística e dados
+                agrícolas.
+              </p>
+              <ul>
+                <li>Aplicação de regressão e dados em painel para relacionar variáveis meteorológicas e produtividade de culturas.</li>
+                <li>Estruturação de bases, análises estatísticas e visualizações em R e Python.</li>
+                <li>Preparação de relatórios e materiais técnicos para públicos acadêmicos e especializados.</li>
               </ul>
             </div>
           </article>
