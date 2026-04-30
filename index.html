@@ -214,17 +214,14 @@
       padding: 24px;
     }
 
-    .profile-initials {
-      display: grid;
-      width: 84px;
-      height: 84px;
-      place-items: center;
+    .profile-photo {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 5;
       border: 1px solid rgba(77, 212, 172, 0.42);
       border-radius: var(--radius);
-      background: rgba(77, 212, 172, 0.1);
-      color: var(--accent);
-      font-size: 1.65rem;
-      font-weight: 850;
+      object-fit: cover;
+      object-position: center 22%;
     }
 
     .intro-card h2 {
@@ -547,9 +544,9 @@
           <h1 id="hero-title">Claudio Soriano</h1>
           <p class="hero-title">Data Scientist | Python | SQL | Machine Learning | Agribusiness Analytics</p>
           <p class="hero-summary">
-            Cientista de Dados com atuação em soluções analíticas para o agronegócio. Desenvolvo pipelines,
-            automações, dashboards e modelos de machine learning usando dados reais de campo, bases estruturadas,
-            planilhas, PDFs e APIs.
+            Cientista de Dados, mestre e doutorando em Meteorologia Aplicada, com atuação em soluções analíticas
+            para o agronegócio. Desenvolvo pipelines, automações, dashboards e modelos de machine learning usando
+            dados reais de campo, bases estruturadas, planilhas, PDFs e APIs.
           </p>
 
           <div class="actions" aria-label="Ações principais">
@@ -562,11 +559,11 @@
 
         <aside class="intro-card" aria-label="Resumo profissional">
           <div>
-            <div class="profile-initials">CS</div>
+            <img class="profile-photo" src="foto-profissional.jpeg" alt="Foto profissional de Claudio Soriano" />
             <h2>Data Scientist</h2>
             <p>
-              Foco em ETL, validação de dados, automação de relatórios, dashboards e modelos aplicados a problemas
-              operacionais e técnicos do agronegócio.
+              Mestre e doutorando em Meteorologia Aplicada, com foco em ETL, validação de dados, automação de
+              relatórios, dashboards e modelos aplicados a problemas operacionais e técnicos do agronegócio.
             </p>
           </div>
 
@@ -707,7 +704,7 @@
       <div class="container">
         <div class="section-header">
           <span class="section-kicker">Projetos</span>
-          <h2 id="projetos-title">Projetos selecionados.</h2>
+          <h2 id="projetos-title">Projetos relevantes.</h2>
           <p>
             Projetos com foco em ciência de dados aplicada, automação, validação e visualização de informações
             agrícolas e operacionais. As descrições abaixo resumem aplicações desenvolvidas em ambiente empresarial,
@@ -717,7 +714,7 @@
 
         <div class="projects-grid">
           <article class="card project-card">
-            <div class="project-number">Projeto 02</div>
+            <div class="project-number">Projeto 01</div>
             <h3>Sistema de Laudos LIBS</h3>
             <div class="project-block">
               <strong>Aplicação</strong>
@@ -737,7 +734,7 @@
           </article>
 
           <article class="card project-card">
-            <div class="project-number">Projeto 04</div>
+            <div class="project-number">Projeto 02</div>
             <h3>Controle Químico — Almoxarifado</h3>
             <div class="project-block">
               <strong>Aplicação</strong>
@@ -757,7 +754,7 @@
           </article>
 
           <article class="card project-card">
-            <div class="project-number">Projeto 05</div>
+            <div class="project-number">Projeto 03</div>
             <h3>Calculadora de Adubação 2.0</h3>
             <div class="project-block">
               <strong>Aplicação</strong>
@@ -777,7 +774,7 @@
           </article>
 
           <article class="card project-card">
-            <div class="project-number">Projeto 07</div>
+            <div class="project-number">Projeto 04</div>
             <h3>Calculadora de Emissões de GEE</h3>
             <div class="project-block">
               <strong>Aplicação</strong>
