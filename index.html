@@ -1,156 +1,882 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>zSoriano • Data Science & Agro Analytics</title>
-  <meta name="description" content="Projetos públicos e privados (destaques) em ciência de dados, micrometeorologia (EC), ML e dashboards." />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🌾</text></svg>">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio profissional de Claudio Soriano, Data Scientist com atuação em Python, SQL, Machine Learning e dados aplicados ao agronegócio." />
+  <title>Claudio Soriano | Data Scientist</title>
+
   <style>
-    :root{--bg:#0b0f17;--card:#0f1522;--muted:#9fb3c8;--text:#e6eef8;--brand:#66d9ff;}
-    *{box-sizing:border-box}
-    body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Arial;background:var(--bg);color:var(--text)}
-    a{color:var(--brand);text-decoration:none}
-    a:hover{opacity:.9}
-    .wrap{max-width:1100px;margin:0 auto;padding:24px}
-    header{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin:24px 0}
-    .title{font-weight:700;font-size:1.6rem}
-    .subtitle{color:var(--muted)}
-    h2{margin:24px 0 12px}
-    .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
-    .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:16px;transition:transform .2s ease,box-shadow .2s ease}
-    .card:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,0,0,.25)}
-    .thumb{width:100%;aspect-ratio:16/9;border-radius:12px;object-fit:cover;background:#111;margin-bottom:12px;border:1px solid rgba(255,255,255,.06)}
-    .tag{display:inline-block;font-size:.75rem;padding:2px 8px;border-radius:999px;border:1px solid rgba(255,255,255,.12);color:var(--muted);margin-right:6px}
-    .card h3{margin:.2rem 0 .4rem;font-size:1.05rem}
-    .card p{margin:.2rem 0 .6rem;color:var(--muted)}
-    .links a{margin-right:12px}
-    footer{margin:40px 0;color:var(--muted);text-align:center;font-size:.9rem}
-    .cta{display:inline-flex;align-items:center;gap:8px;background:rgba(102,217,255,.1);color:var(--brand);border:1px solid rgba(102,217,255,.3);padding:10px 14px;border-radius:10px}
-    .cta:hover{background:rgba(102,217,255,.14)}
-    .badges{display:flex;flex-wrap:wrap;gap:6px;margin:.25rem 0 .5rem}
-    .badge{border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:2px 8px;font-size:.75rem;color:var(--muted)}
-    .divider{height:1px;background:rgba(255,255,255,.08);margin:24px 0}
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <header>
-      <div>
-        <div class="title">zSoriano • Data Science & Agro Analytics</div>
-        <div class="subtitle">Micrometeorologia (EC) • ML • Dashboards • Agro</div>
-      </div>
-      <nav class="links">
-        <a class="cta" href="mailto:seuemail@exemplo.com">Contato</a>
-        <a class="cta" href="https://www.linkedin.com/in/SEULINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="cta" href="https://github.com/zSoriano" target="_blank" rel="noopener">GitHub</a>
-      </nav>
-    </header>
+    :root {
+      --bg: #081016;
+      --surface: #101922;
+      --surface-soft: #14202b;
+      --card: #111d27;
+      --border: #263545;
+      --text: #eef4f7;
+      --muted: #a8b5bd;
+      --muted-strong: #c5d0d6;
+      --accent: #4dd4ac;
+      --accent-2: #7cc7ff;
+      --warning: #f1b86b;
+      --shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+      --radius: 8px;
+      --max-width: 1120px;
+      --nav-height: 72px;
+    }
 
-    <section>
-      <p>Portfólio dos meus projetos. <em>Alguns destaques são privados</em> (sem link de código), mas incluem descrição e, quando disponível, link de demo.</p>
-    </section>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    <!-- PROJETOS DESTACADOS (PRIVADOS) -->
-    <h2>Projetos destacados</h2>
-    <section class="grid">
-      <!-- 1) correlacoes-arvore-decisao-agrorobotica -->
-      <article class="card">
-        <img class="thumb" src="img/agrorobotica-correlacoes.png" alt="Correlações & Árvore de Decisão">
-        <div class="badges">
-          <span class="badge">Python</span><span class="badge">Sklearn</span><span class="badge">Agro</span>
-        </div>
-        <h3>Correlação & Decision Tree – Agrorobótica</h3>
-        <p>Pipeline de análise de correlações e modelos de árvore de decisão para variáveis agronômicas, explicabilidade (importâncias, SHAP) e relatório automatizado.</p>
-        <p>
-          <!-- Se tiver demo pública, coloque a URL abaixo -->
-          <!-- <a href="https://SEU-LINK-DE-DEMO.com" target="_blank" rel="noopener">Demo</a> -->
-          <em>Repositório privado</em>
-        </p>
-      </article>
+    html {
+      scroll-behavior: smooth;
+    }
 
-      <!-- 2) almoxarifado -->
-      <article class="card">
-        <img class="thumb" src="img/almoxarifado.png" alt="Almoxarifado">
-        <div class="badges">
-          <span class="badge">Streamlit</span><span class="badge">CRUD</span><span class="badge">Relatórios</span>
-        </div>
-        <h3>Almoxarifado • Gestão de Reagentes</h3>
-        <p>App operacional com cadastro de reagentes/soluções, inventário, histórico e KPIs; exportação em PDF com cabeçalho/rodapé e trilhas de auditoria.</p>
-        <p>
-          <!-- <a href="https://SEU-LINK-DE-DEMO.com" target="_blank" rel="noopener">Demo</a> -->
-          <em>Repositório privado</em>
-        </p>
-      </article>
+    body {
+      background:
+        linear-gradient(180deg, rgba(77, 212, 172, 0.08), transparent 420px),
+        linear-gradient(135deg, #081016 0%, #0b131b 45%, #10151e 100%);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+      padding-top: var(--nav-height);
+    }
 
-      <!-- 3) padronizacao_laudo_exe -->
-      <article class="card">
-        <img class="thumb" src="img/padronizacao-laudo.png" alt="Padronização de Laudos">
-        <div class="badges">
-          <span class="badge">Python</span><span class="badge">Automação</span><span class="badge">PDF</span>
-        </div>
-        <h3>Padronização de Laudos (EXE)</h3>
-        <p>Ferramenta para padronizar laudos técnicos com modelos de template, validação de campos e geração automatizada de arquivos finais para envio.</p>
-        <p>
-          <!-- <a href="https://SEU-LINK-DE-DEMO.com" target="_blank" rel="noopener">Demo</a> -->
-          <em>Repositório privado</em>
-        </p>
-      </article>
-    </section>
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-    <div class="divider"></div>
+    .container {
+      width: min(100% - 32px, var(--max-width));
+      margin: 0 auto;
+    }
 
-    <!-- REPOS PÚBLICOS (AUTO) -->
-    <h2>Repositórios públicos</h2>
-    <section class="grid" id="autoGrid">
-      <!-- preenchido via GitHub API -->
-    </section>
+    .nav {
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 10;
+      height: var(--nav-height);
+      border-bottom: 1px solid rgba(38, 53, 69, 0.78);
+      background: rgba(8, 16, 22, 0.9);
+      backdrop-filter: blur(18px);
+    }
 
-    <footer>© <span id="y"></span> • Hospedado no GitHub Pages</footer>
-  </div>
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
 
-  <script>
-    const GH_USER = "zSoriano";
-    document.getElementById("y").textContent = new Date().getFullYear();
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 750;
+    }
 
-    async function loadRepos(){
-      try{
-        const res = await fetch(`https://api.github.com/users/${GH_USER}/repos?per_page=100&sort=updated`, {
-          headers:{ "Accept":"application/vnd.github+json" }
-        });
-        const data = await res.json();
-        const grid = document.getElementById("autoGrid");
-        if(!Array.isArray(data)){ grid.innerHTML = "<p>Não foi possível carregar os repositórios.</p>"; return; }
+    .brand-mark {
+      display: inline-grid;
+      width: 38px;
+      height: 38px;
+      place-items: center;
+      border: 1px solid rgba(77, 212, 172, 0.48);
+      border-radius: var(--radius);
+      background: rgba(77, 212, 172, 0.12);
+      color: var(--accent);
+      font-size: 0.92rem;
+      letter-spacing: 0;
+    }
 
-        data
-          .filter(r => !r.fork)
-          .sort((a,b) => (b.homepage?1:0) - (a.homepage?1:0) || new Date(b.pushed_at) - new Date(a.pushed_at))
-          .forEach(r => {
-            const topics = (r.topics || []).slice(0,4);
-            const el = document.createElement("article");
-            el.className = "card";
-            el.innerHTML = `
-              <img class="thumb" src="https://opengraph.githubassets.com/1/${GH_USER}/${r.name}" alt="${r.name}">
-              ${topics.map(t=>`<span class="tag">${t}</span>`).join("")}
-              <h3>${r.name.replace(/-/g," ")}</h3>
-              <p>${r.description ? r.description : "Sem descrição."}</p>
-              <p>
-                <a href="${r.html_url}" target="_blank" rel="noopener">Código</a>
-                ${r.homepage ? `· <a href="${r.homepage}" target="_blank" rel="noopener">Demo</a>` : ""}
-              </p>
-            `;
-            grid.appendChild(el);
-          });
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
 
-        if(!grid.children.length){
-          grid.innerHTML = "<p>Nenhum repositório público encontrado.</p>";
-        }
-      } catch(e){
-        console.warn(e);
-        document.getElementById("autoGrid").innerHTML = "<p>Falha ao carregar repositórios.</p>";
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      color: var(--text);
+    }
+
+    section {
+      scroll-margin-top: calc(var(--nav-height) + 22px);
+      padding: 76px 0;
+    }
+
+    .hero {
+      padding: 82px 0 72px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+      gap: 34px;
+      align-items: stretch;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      margin-bottom: 20px;
+      padding: 7px 10px;
+      border: 1px solid rgba(124, 199, 255, 0.34);
+      border-radius: var(--radius);
+      background: rgba(124, 199, 255, 0.08);
+      color: var(--accent-2);
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
+    h1 {
+      max-width: 840px;
+      margin-bottom: 18px;
+      font-size: clamp(2.8rem, 7vw, 5.7rem);
+      line-height: 0.96;
+      letter-spacing: 0;
+    }
+
+    .hero-title {
+      max-width: 860px;
+      color: var(--muted-strong);
+      font-size: clamp(1.04rem, 2vw, 1.28rem);
+      font-weight: 650;
+    }
+
+    .hero-summary {
+      max-width: 760px;
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 1.06rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 11px 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text);
+      font-size: 0.94rem;
+      font-weight: 750;
+      transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+    }
+
+    .button:hover,
+    .button:focus-visible {
+      border-color: rgba(77, 212, 172, 0.72);
+      background: rgba(77, 212, 172, 0.1);
+      transform: translateY(-1px);
+    }
+
+    .button-primary {
+      border-color: transparent;
+      background: var(--accent);
+      color: #06110e;
+    }
+
+    .button-primary:hover,
+    .button-primary:focus-visible {
+      background: #6de2c0;
+      color: #06110e;
+    }
+
+    .intro-card,
+    .card,
+    .timeline-item,
+    .contact-panel {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: rgba(17, 29, 39, 0.86);
+      box-shadow: var(--shadow);
+    }
+
+    .intro-card {
+      display: grid;
+      align-content: space-between;
+      gap: 24px;
+      padding: 24px;
+    }
+
+    .profile-initials {
+      display: grid;
+      width: 84px;
+      height: 84px;
+      place-items: center;
+      border: 1px solid rgba(77, 212, 172, 0.42);
+      border-radius: var(--radius);
+      background: rgba(77, 212, 172, 0.1);
+      color: var(--accent);
+      font-size: 1.65rem;
+      font-weight: 850;
+    }
+
+    .intro-card h2 {
+      margin-top: 16px;
+      font-size: 1.32rem;
+    }
+
+    .intro-card p,
+    .metric span,
+    .section-header p,
+    .card p,
+    .card li,
+    .timeline-item p,
+    .timeline-item li,
+    .contact-panel p {
+      color: var(--muted);
+    }
+
+    .metrics {
+      display: grid;
+      gap: 10px;
+    }
+
+    .metric {
+      border-left: 3px solid var(--accent);
+      padding: 10px 12px;
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .metric strong,
+    .metric span {
+      display: block;
+    }
+
+    .metric strong {
+      color: var(--text);
+      font-size: 0.98rem;
+    }
+
+    .metric span {
+      font-size: 0.84rem;
+    }
+
+    .section-header {
+      max-width: 790px;
+      margin-bottom: 30px;
+    }
+
+    .section-kicker {
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 850;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .section-header h2 {
+      margin-top: 8px;
+      font-size: clamp(2rem, 4.6vw, 3.25rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .section-header p {
+      margin-top: 12px;
+      font-size: 1.02rem;
+    }
+
+    .split-grid,
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      padding: 22px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 1.18rem;
+      line-height: 1.25;
+    }
+
+    .card ul,
+    .timeline-item ul {
+      display: grid;
+      gap: 8px;
+      padding-left: 18px;
+    }
+
+    .skill-card {
+      min-height: 202px;
+    }
+
+    .skill-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .marker {
+      width: 10px;
+      height: 10px;
+      flex: 0 0 10px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .tag {
+      border: 1px solid rgba(124, 199, 255, 0.3);
+      border-radius: 999px;
+      background: rgba(124, 199, 255, 0.08);
+      color: var(--muted-strong);
+      font-size: 0.82rem;
+      font-weight: 650;
+      padding: 5px 9px;
+    }
+
+    .project-card {
+      display: grid;
+      gap: 16px;
+      align-content: start;
+    }
+
+    .project-note {
+      margin-top: 18px;
+      border: 1px solid rgba(241, 184, 107, 0.35);
+      border-radius: var(--radius);
+      background: rgba(241, 184, 107, 0.08);
+      color: var(--muted-strong);
+      padding: 16px 18px;
+      font-size: 0.95rem;
+    }
+
+    .project-number {
+      color: var(--warning);
+      font-size: 0.82rem;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .project-block {
+      display: grid;
+      gap: 6px;
+    }
+
+    .project-block strong {
+      color: var(--text);
+      font-size: 0.9rem;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 16px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 210px minmax(0, 1fr);
+      gap: 22px;
+      padding: 24px;
+    }
+
+    .timeline-label {
+      color: var(--accent-2);
+      font-size: 0.86rem;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .timeline-item h3 {
+      margin-bottom: 8px;
+      font-size: 1.2rem;
+    }
+
+    .timeline-item ul {
+      margin-top: 12px;
+    }
+
+    .contact-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+      gap: 26px;
+      align-items: center;
+      padding: 30px;
+      background:
+        linear-gradient(135deg, rgba(77, 212, 172, 0.12), rgba(124, 199, 255, 0.08)),
+        rgba(17, 29, 39, 0.92);
+    }
+
+    .contact-links {
+      display: grid;
+      gap: 12px;
+    }
+
+    .contact-links .button {
+      justify-content: flex-start;
+    }
+
+    footer {
+      border-top: 1px solid rgba(38, 53, 69, 0.78);
+      color: var(--muted);
+      font-size: 0.92rem;
+      padding: 28px 0 38px;
+      text-align: center;
+    }
+
+    @media (max-width: 920px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero-grid,
+      .split-grid,
+      .projects-grid,
+      .skills-grid,
+      .timeline-item,
+      .contact-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 52px;
       }
     }
-    loadRepos();
-  </script>
+
+    @media (max-width: 560px) {
+      :root {
+        --nav-height: 64px;
+      }
+
+      body {
+        line-height: 1.55;
+      }
+
+      section {
+        padding: 54px 0;
+      }
+
+      .container {
+        width: min(100% - 24px, var(--max-width));
+      }
+
+      .brand {
+        gap: 10px;
+      }
+
+      .brand-mark {
+        width: 34px;
+        height: 34px;
+      }
+
+      .hero {
+        padding: 44px 0 52px;
+      }
+
+      h1 {
+        font-size: clamp(2.45rem, 18vw, 3.8rem);
+      }
+
+      .actions {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .card,
+      .intro-card,
+      .timeline-item,
+      .contact-panel {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Voltar ao início">
+        <span class="brand-mark">CS</span>
+        <span>Claudio Soriano</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Data Science aplicado ao agronegócio</span>
+          <h1 id="hero-title">Claudio Soriano</h1>
+          <p class="hero-title">Data Scientist | Python | SQL | Machine Learning | Agribusiness Analytics</p>
+          <p class="hero-summary">
+            Cientista de Dados com atuação em soluções analíticas para o agronegócio. Desenvolvo pipelines,
+            automações, dashboards e modelos de machine learning usando dados reais de campo, bases estruturadas,
+            planilhas, PDFs e APIs.
+          </p>
+
+          <div class="actions" aria-label="Ações principais">
+            <a class="button button-primary" href="#projetos">Projetos</a>
+            <a class="button" href="#contato">Contato</a>
+            <a class="button" href="https://github.com/zSoriano" target="_blank" rel="noopener">GitHub</a>
+            <a class="button" href="https://www.linkedin.com/in/claudio-soriano1/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+
+        <aside class="intro-card" aria-label="Resumo profissional">
+          <div>
+            <div class="profile-initials">CS</div>
+            <h2>Data Scientist</h2>
+            <p>
+              Foco em ETL, validação de dados, automação de relatórios, dashboards e modelos aplicados a problemas
+              operacionais e técnicos do agronegócio.
+            </p>
+          </div>
+
+          <div class="metrics" aria-label="Áreas de atuação">
+            <div class="metric">
+              <span>Setor</span>
+              <strong>Agronegócio</strong>
+            </div>
+            <div class="metric">
+              <span>Stack principal</span>
+              <strong>Python, SQL, Pandas, NumPy, Scikit-learn</strong>
+            </div>
+            <div class="metric">
+              <span>Entrega</span>
+              <strong>ETL, automação, dashboards, APIs e validação</strong>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="sobre" aria-labelledby="sobre-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Sobre</span>
+          <h2 id="sobre-title">Dados aplicados a operações agrícolas reais.</h2>
+          <p>
+            Atuo na construção de fluxos de dados de ponta a ponta, desde a extração e padronização até a entrega de
+            análises, dashboards e modelos que apoiam decisões técnicas.
+          </p>
+        </div>
+
+        <div class="split-grid">
+          <article class="card">
+            <h3>Atuação profissional</h3>
+            <p>
+              Trabalho com integração de planilhas, PDFs, APIs e bases estruturadas, criando processos em Python e SQL
+              para organizar dados de campo, automatizar rotinas e reduzir trabalho manual em análises recorrentes.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Destaques</h3>
+            <ul>
+              <li>ETL para dados agrícolas heterogêneos e fontes com formatos variados.</li>
+              <li>Automação de relatórios e rotinas de validação de dados.</li>
+              <li>Dashboards para acompanhamento operacional e comunicação de indicadores.</li>
+              <li>Modelos de machine learning para recomendação e suporte à decisão agrícola.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" aria-labelledby="habilidades-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Habilidades</span>
+          <h2 id="habilidades-title">Competências técnicas e analíticas.</h2>
+          <p>
+            Conjunto de ferramentas e práticas usadas para transformar dados brutos em produtos analíticos
+            documentados, rastreáveis e úteis para equipes técnicas e de negócio.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="card skill-card">
+            <h3 class="skill-title"><span class="marker"></span>Dados e ETL</h3>
+            <p>Extração, limpeza, padronização e integração de dados de planilhas, PDFs, APIs e bancos relacionais.</p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">APIs</span>
+            </div>
+          </article>
+
+          <article class="card skill-card">
+            <h3 class="skill-title"><span class="marker"></span>Machine Learning</h3>
+            <p>Preparação de features, treinamento, avaliação e uso de modelos para recomendação e classificação.</p>
+            <div class="tags">
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">Feature Engineering</span>
+              <span class="tag">Validação</span>
+              <span class="tag">Métricas</span>
+            </div>
+          </article>
+
+          <article class="card skill-card">
+            <h3 class="skill-title"><span class="marker"></span>Dashboards e Produtos</h3>
+            <p>Construção de painéis, aplicações analíticas e interfaces para acompanhamento de indicadores.</p>
+            <div class="tags">
+              <span class="tag">Dashboards</span>
+              <span class="tag">Produtos de Dados</span>
+              <span class="tag">Automação</span>
+              <span class="tag">Relatórios</span>
+            </div>
+          </article>
+
+          <article class="card skill-card">
+            <h3 class="skill-title"><span class="marker"></span>Qualidade de Dados</h3>
+            <p>Regras de consistência, checagem de dados, rastreabilidade e organização de processos confiáveis.</p>
+            <div class="tags">
+              <span class="tag">Data Quality</span>
+              <span class="tag">Validação</span>
+              <span class="tag">Auditoria</span>
+              <span class="tag">Documentação</span>
+            </div>
+          </article>
+
+          <article class="card skill-card">
+            <h3 class="skill-title"><span class="marker"></span>Pesquisa e Análise</h3>
+            <p>Análise de dados ambientais, séries temporais e interpretação técnica de resultados quantitativos.</p>
+            <div class="tags">
+              <span class="tag">Séries Temporais</span>
+              <span class="tag">Estatística</span>
+              <span class="tag">Dados Ambientais</span>
+              <span class="tag">Análise Exploratória</span>
+            </div>
+          </article>
+
+          <article class="card skill-card">
+            <h3 class="skill-title"><span class="marker"></span>Comunicação Técnica</h3>
+            <p>Tradução de análises em documentação, relatórios e entregas claras para públicos técnicos e não técnicos.</p>
+            <div class="tags">
+              <span class="tag">Documentação</span>
+              <span class="tag">Relatórios</span>
+              <span class="tag">Visualização</span>
+              <span class="tag">Alinhamento Técnico</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" aria-labelledby="projetos-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Projetos</span>
+          <h2 id="projetos-title">Projetos selecionados.</h2>
+          <p>
+            Projetos com foco em ciência de dados aplicada, automação, validação e visualização de informações
+            agrícolas e operacionais. As descrições abaixo resumem aplicações desenvolvidas em ambiente empresarial,
+            sem exposição de código, dados sensíveis ou informações internas.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="card project-card">
+            <div class="project-number">Projeto 01</div>
+            <h3>Calculadora de Emissões de Carbono</h3>
+            <div class="project-block">
+              <strong>Aplicação</strong>
+              <p>
+                Ferramenta para organizar dados agrícolas e apoiar estimativas de emissões de carbono a partir de
+                informações operacionais preenchidas por clientes e equipes técnicas.
+              </p>
+            </div>
+            <div class="project-block">
+              <strong>Base técnica</strong>
+              <p>Python, Pandas, NumPy, ETL, Excel e validação de dados.</p>
+            </div>
+            <div class="project-block">
+              <strong>Resultado esperado</strong>
+              <p>Processo mais organizado para consolidar entradas, aplicar regras de consistência e preparar análises auditáveis.</p>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-number">Projeto 02</div>
+            <h3>Automação de Relatórios Agronômicos</h3>
+            <div class="project-block">
+              <strong>Aplicação</strong>
+              <p>
+                Pipeline para consolidar dados vindos de planilhas, PDFs e bases de clientes, gerando relatórios
+                agronômicos com menor dependência de etapas manuais.
+              </p>
+            </div>
+            <div class="project-block">
+              <strong>Base técnica</strong>
+              <p>Python, Pandas, Google Sheets, APIs, Excel e automação de relatórios.</p>
+            </div>
+            <div class="project-block">
+              <strong>Resultado esperado</strong>
+              <p>Padronização do fluxo de geração de relatórios e maior rastreabilidade entre dados de entrada e saída.</p>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-number">Projeto 03</div>
+            <h3>Dashboard Operacional em Tempo Real</h3>
+            <div class="project-block">
+              <strong>Aplicação</strong>
+              <p>
+                Dashboard para centralizar indicadores operacionais, acompanhar dados agrícolas e facilitar a leitura
+                de informações em uma visão única para acompanhamento interno.
+              </p>
+            </div>
+            <div class="project-block">
+              <strong>Base técnica</strong>
+              <p>SQL, Python, APIs, dashboards, visualização de dados e rotinas de atualização.</p>
+            </div>
+            <div class="project-block">
+              <strong>Resultado esperado</strong>
+              <p>Melhor acompanhamento das informações operacionais e redução de consultas dispersas em diferentes arquivos.</p>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-number">Projeto 04</div>
+            <h3>Modelos para Recomendação Agrícola</h3>
+            <div class="project-block">
+              <strong>Aplicação</strong>
+              <p>
+                Modelos analíticos para apoiar recomendações agrícolas usando dados históricos, variáveis de campo e
+                regras técnicas definidas no contexto do negócio.
+              </p>
+            </div>
+            <div class="project-block">
+              <strong>Base técnica</strong>
+              <p>Python, Scikit-learn, Pandas, machine learning, validação e análise exploratória.</p>
+            </div>
+            <div class="project-block">
+              <strong>Resultado esperado</strong>
+              <p>Base analítica para suporte à decisão técnica e evolução de recomendações orientadas por dados.</p>
+            </div>
+          </article>
+        </div>
+
+        <p class="project-note">
+          Observação: os repositórios e bases desses projetos são privados por pertencerem à empresa. O portfólio
+          apresenta apenas uma explicação funcional e técnica das aplicações, sem divulgar código-fonte, dados de
+          clientes ou detalhes internos.
+        </p>
+      </div>
+    </section>
+
+    <section id="experiencia" aria-labelledby="experiencia-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Experiência</span>
+          <h2 id="experiencia-title">Experiência profissional e pesquisa.</h2>
+          <p>
+            Trajetória conectando análise de dados, automação, produtos analíticos e interpretação de dados ambientais.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-label">Jul/2025 - atual</div>
+            <div>
+              <h3>Data Scientist — Agrorobótica</h3>
+              <p>
+                Desenvolvimento de soluções de dados aplicadas ao agronegócio, com foco em ETL, automação de relatórios,
+                dashboards, APIs, validação de dados e modelos analíticos.
+              </p>
+              <ul>
+                <li>Integração de dados de campo, planilhas, PDFs, APIs e bases estruturadas.</li>
+                <li>Automação de rotinas analíticas e relatórios para processos agrícolas.</li>
+                <li>Criação de dashboards e fluxos de validação para apoiar decisões operacionais.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-label">Instituição: Agrorobótica</div>
+            <div>
+              <h3>Experiência acadêmica e pesquisa em dados ambientais</h3>
+              <p>
+                Experiência com análise de dados ambientais e séries temporais, incluindo organização de bases,
+                exploração estatística, visualização e comunicação técnica de resultados.
+              </p>
+              <ul>
+                <li>Processamento e análise de séries temporais ambientais.</li>
+                <li>Estruturação de bases para investigação quantitativa.</li>
+                <li>Preparação de resultados para relatórios, apresentações ou documentos técnicos.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" aria-labelledby="contato-title">
+      <div class="container">
+        <div class="contact-panel">
+          <div>
+            <span class="section-kicker">Contato</span>
+            <h2 id="contato-title">Vamos conversar sobre dados, produto e agronegócio.</h2>
+            <p>
+              Para oportunidades em Data Science, Analytics Engineering, automação, dashboards ou projetos aplicados ao
+              agronegócio, use os canais abaixo.
+            </p>
+          </div>
+
+          <div class="contact-links" aria-label="Links de contato">
+            <a class="button button-primary" href="mailto:claudio.soriano1@outlook.com">claudio.soriano1@outlook.com</a>
+            <a class="button" href="https://www.linkedin.com/in/claudio-soriano1/" target="_blank" rel="noopener">LinkedIn: claudio-soriano1</a>
+            <a class="button" href="https://github.com/zSoriano" target="_blank" rel="noopener">GitHub: zSoriano</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Claudio Soriano. Portfólio em HTML e CSS para GitHub Pages.</p>
+    </div>
+  </footer>
 </body>
 </html>
