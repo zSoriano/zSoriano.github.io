@@ -114,6 +114,22 @@
       outline-offset: 3px;
     }
 
+    .lang-switch {
+      border: 1px solid rgba(31, 143, 111, 0.32);
+      border-radius: 4px;
+      padding: 4px 10px;
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.82rem;
+      transition: background 0.18s ease;
+    }
+
+    .lang-switch:hover,
+    .lang-switch:focus-visible {
+      background: rgba(31, 143, 111, 0.1);
+      color: var(--accent);
+    }
+
     section {
       scroll-margin-top: calc(var(--nav-height) + 22px);
       padding: 76px 0;
@@ -628,6 +644,7 @@
         <a href="#projetos">Projetos</a>
         <a href="#experiencia">Experiência</a>
         <a href="#contato">Contato</a>
+        <a class="lang-switch" href="en/index.html" aria-label="English version">EN</a>
       </nav>
     </div>
   </header>
