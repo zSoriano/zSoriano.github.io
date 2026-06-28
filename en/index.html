@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional portfolio of Claudio Soriano, Data Scientist working with Python, SQL, Machine Learning and data applied to agribusiness." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231f8f6f'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Arial,sans-serif' font-size='24' font-weight='700' fill='white'%3ECS%3C/text%3E%3C/svg%3E" type="image/svg+xml" />
+  <title>Claudio Soriano | Data Scientist</title>
+
+  <style>
+    :root {
+      --bg: #f6f8f7;
+      --surface: #ffffff;
+      --surface-soft: #eef3f1;
+      --card: #ffffff;
+      --border: #d8e1dd;
+      --text: #16201d;
+      --muted: #5f6f69;
+      --muted-strong: #33423d;
+      --accent: #1f8f6f;
+      --accent-2: #256f93;
+      --warning: #a66b1f;
+      --shadow: 0 18px 45px rgba(27, 47, 40, 0.1);
+      --radius: 8px;
+      --max-width: 1120px;
+      --nav-height: 72px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background:
+        linear-gradient(180deg, rgba(31, 143, 111, 0.08), transparent 460px),
+        linear-gradient(135deg, #f6f8f7 0%, #eef3f1 55%, #f9fbfa 100%);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+      padding-top: var(--nav-height);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(100% - 32px, var(--max-width));
+      margin: 0 auto;
+    }
+
+    .nav {
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 10;
+      height: var(--nav-height);
+      border-bottom: 1px solid rgba(216, 225, 221, 0.92);
+      background: rgba(246, 248, 247, 0.9);
+      backdrop-filter: blur(18px);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 750;
+    }
+
+    .brand-mark {
+      display: inline-grid;
+      width: 38px;
+      height: 38px;
+      place-items: center;
+      border: 1px solid rgba(31, 143, 111, 0.42);
+      border-radius: var(--radius);
+      background: rgba(31, 143, 111, 0.1);
+      color: var(--accent);
+      font-size: 0.92rem;
+      letter-spacing: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      color: var(--text);
+    }
+
+    .nav-links a:focus-visible,
+    .brand:focus-visible,
+    .button:focus-visible {
+      outline: 3px solid rgba(31, 143, 111, 0.3);
+      outline-offset: 3px;
+    }
+
+    .lang-switch {
+      border: 1px solid rgba(31, 143, 111, 0.32);
+      border-radius: 4px;
+      padding: 4px 10px;
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.82rem;
+      transition: background 0.18s ease;
+    }
+
+    .lang-switch:hover,
+    .lang-switch:focus-visible {
+      background: rgba(31, 143, 111, 0.1);
+      color: var(--accent);
+    }
+
+    section {
+      scroll-margin-top: calc(var(--nav-height) + 22px);
+      padding: 76px 0;
+    }
+
+    .hero {
+      padding: 82px 0 72px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+      gap: 34px;
+      align-items: start;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      margin-bottom: 20px;
+      padding: 7px 10px;
+      border: 1px solid rgba(37, 111, 147, 0.25);
+      border-radius: var(--radius);
+      background: rgba(37, 111, 147, 0.08);
+      color: var(--accent-2);
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
+    h1 {
+      max-width: 840px;
+      margin-bottom: 18px;
+      font-size: clamp(2.5rem, 5.4vw, 4.35rem);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .hero-title {
+      max-width: 860px;
+      color: var(--muted-strong);
+      font-size: clamp(1.04rem, 2vw, 1.28rem);
+      font-weight: 650;
+    }
+
+    .hero-summary {
+      max-width: 760px;
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 1.06rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 11px 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.76);
+      color: var(--text);
+      font-size: 0.94rem;
+      font-weight: 750;
+      transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+    }
+
+    .button:hover,
+    .button:focus-visible {
+      border-color: rgba(31, 143, 111, 0.72);
+      background: rgba(31, 143, 111, 0.09);
+      transform: translateY(-1px);
+    }
+
+    .button-primary {
+      border-color: transparent;
+      background: var(--accent);
+      color: #ffffff;
+    }
+
+    .button-primary:hover,
+    .button-primary:focus-visible {
+      background: #176f56;
+      color: #ffffff;
+    }
+
+    .intro-card,
+    .card,
+    .timeline-item,
+    .contact-panel {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.88);
+      box-shadow: var(--shadow);
+      transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .intro-card:hover,
+    .card:hover,
+    .timeline-item:hover,
+    .contact-panel:hover,
+    .metric:hover {
+      border-color: rgba(31, 143, 111, 0.68);
+      background: #ffffff;
+      box-shadow: 0 22px 55px rgba(27, 47, 40, 0.14), 0 0 0 1px rgba(31, 143, 111, 0.08);
+      transform: translateY(-3px);
+    }
+
+    .intro-card {
+      display: grid;
+      align-content: start;
+      gap: 18px;
+      padding: 24px;
+    }
+
+    .profile-photo {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border: 1px solid rgba(31, 143, 111, 0.32);
+      border-radius: var(--radius);
+      object-fit: cover;
+      object-position: center 22%;
+    }
+
+    .intro-card h2 {
+      margin-top: 16px;
+      font-size: 1.32rem;
+    }
+
+    .intro-card p,
+    .metric span,
+    .section-header p,
+    .card p,
+    .card li,
+    .timeline-item p,
+    .timeline-item li,
+    .contact-panel p {
+      color: var(--muted);
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .metric {
+      border-left: 3px solid var(--accent);
+      border-top: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      min-height: 86px;
+      padding: 12px 14px;
+      background: rgba(255, 255, 255, 0.74);
+      transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .metric strong,
+    .metric span {
+      display: block;
+    }
+
+    .metric strong {
+      color: var(--text);
+      font-size: 0.98rem;
+      line-height: 1.35;
+    }
+
+    .metric span {
+      font-size: 0.84rem;
+    }
+
+    .section-header {
+      max-width: 790px;
+      margin-bottom: 30px;
+    }
+
+    .section-kicker {
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 850;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .section-header h2 {
+      margin-top: 8px;
+      font-size: clamp(1.85rem, 4vw, 2.85rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .section-header p {
+      margin-top: 12px;
+      font-size: 1.02rem;
+    }
+
+    .split-grid,
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      padding: 22px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 1.18rem;
+      line-height: 1.25;
+    }
+
+    .card ul,
+    .timeline-item ul {
+      display: grid;
+      gap: 8px;
+      padding-left: 18px;
+    }
+
+    .skill-card {
+      min-height: 228px;
+    }
+
+    .skill-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .marker {
+      width: 10px;
+      height: 10px;
+      flex: 0 0 10px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .tag {
+      border: 1px solid rgba(37, 111, 147, 0.22);
+      border-radius: 999px;
+      background: rgba(37, 111, 147, 0.08);
+      color: var(--muted-strong);
+      font-size: 0.82rem;
+      font-weight: 650;
+      padding: 5px 9px;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .skill-chip {
+      border: 1px solid rgba(31, 143, 111, 0.22);
+      border-radius: 4px;
+      background: rgba(31, 143, 111, 0.08);
+      color: var(--muted-strong);
+      font-size: 0.82rem;
+      font-weight: 650;
+      line-height: 1.35;
+      padding: 7px 9px;
+    }
+
+    .project-card {
+      display: grid;
+      gap: 16px;
+      align-content: start;
+    }
+
+    .project-note {
+      margin-top: 18px;
+      border: 1px solid rgba(166, 107, 31, 0.28);
+      border-radius: var(--radius);
+      background: rgba(166, 107, 31, 0.08);
+      color: var(--muted-strong);
+      padding: 16px 18px;
+      font-size: 0.95rem;
+    }
+
+    .project-number {
+      color: var(--warning);
+      font-size: 0.82rem;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .project-block {
+      display: grid;
+      gap: 6px;
+    }
+
+    .project-block strong {
+      color: var(--text);
+      font-size: 0.9rem;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 16px;
+    }
+
+    .education-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .education-heading {
+      margin-top: 40px;
+      margin-bottom: 16px;
+      font-size: 1.1rem;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 210px minmax(0, 1fr);
+      gap: 22px;
+      padding: 24px;
+    }
+
+    .timeline-label {
+      color: var(--accent-2);
+      font-size: 0.86rem;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .timeline-item h3 {
+      margin-bottom: 8px;
+      font-size: 1.2rem;
+    }
+
+    .timeline-item ul {
+      margin-top: 12px;
+    }
+
+    .contact-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+      gap: 26px;
+      align-items: center;
+      padding: 30px;
+      background:
+        linear-gradient(135deg, rgba(31, 143, 111, 0.1), rgba(37, 111, 147, 0.08)),
+        rgba(255, 255, 255, 0.94);
+    }
+
+    .contact-links {
+      display: grid;
+      gap: 12px;
+    }
+
+    .contact-links .button {
+      justify-content: flex-start;
+    }
+
+    footer {
+      border-top: 1px solid rgba(216, 225, 221, 0.92);
+      color: var(--muted);
+      font-size: 0.92rem;
+      padding: 28px 0 38px;
+      text-align: center;
+    }
+
+    @media (max-width: 920px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero-grid,
+      .split-grid,
+      .projects-grid,
+      .skills-grid,
+      .education-grid,
+      .timeline-item,
+      .contact-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .metrics {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 52px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      :root {
+        --nav-height: 64px;
+      }
+
+      body {
+        line-height: 1.55;
+      }
+
+      section {
+        padding: 54px 0;
+      }
+
+      .container {
+        width: min(100% - 24px, var(--max-width));
+      }
+
+      .brand {
+        gap: 10px;
+      }
+
+      .brand-mark {
+        width: 34px;
+        height: 34px;
+      }
+
+      .hero {
+        padding: 44px 0 52px;
+      }
+
+      h1 {
+        font-size: clamp(2.1rem, 11vw, 3rem);
+        line-height: 1.04;
+      }
+
+      .hero-title {
+        font-size: clamp(0.98rem, 4vw, 1.12rem);
+      }
+
+      .hero-summary,
+      .section-header p {
+        font-size: 0.98rem;
+      }
+
+      .section-header h2,
+      .contact-panel h2 {
+        font-size: clamp(1.65rem, 8vw, 2.2rem);
+        line-height: 1.12;
+      }
+
+      .actions {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .card,
+      .intro-card,
+      .timeline-item,
+      .contact-panel {
+        padding: 18px;
+      }
+
+      .metrics {
+        margin-top: 20px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand-mark">CS</span>
+        <span>Claudio Soriano</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a class="lang-switch" href="../index.html" aria-label="Versão em português">PT</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Data Science applied to agribusiness</span>
+          <h1 id="hero-title">Claudio Soriano</h1>
+          <p class="hero-title">Data Scientist | Python | SQL | Machine Learning | Agribusiness Analytics</p>
+          <p class="hero-summary">
+            Data Scientist, MSc and PhD candidate in Applied Meteorology, working on analytical solutions
+            for agribusiness. I develop pipelines, automations, dashboards, and machine learning models using
+            real field data, structured databases, spreadsheets, PDFs, and APIs.
+          </p>
+
+          <div class="actions" aria-label="Main actions">
+            <a class="button button-primary" href="#projects">Projects</a>
+            <a class="button" href="#contact">Contact</a>
+            <a class="button" href="https://github.com/zSoriano" target="_blank" rel="noopener">GitHub</a>
+            <a class="button" href="https://www.linkedin.com/in/claudio-soriano1/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+
+          <div class="metrics" aria-label="Areas of expertise">
+            <div class="metric">
+              <span>Sectors</span>
+              <strong>Agribusiness and Industry</strong>
+            </div>
+            <div class="metric">
+              <span>Core stack</span>
+              <strong>Python, SQL, Pandas, NumPy, Scikit-learn</strong>
+            </div>
+            <div class="metric">
+              <span>Delivery</span>
+              <strong>ETL, automation, dashboards, APIs, and validation</strong>
+            </div>
+          </div>
+        </div>
+
+        <aside class="intro-card" aria-label="Professional summary">
+          <div>
+            <img class="profile-photo" src="../foto-profissional.jpeg" alt="Professional photo of Claudio Soriano" />
+            <h2>Data Scientist</h2>
+            <p>
+              Background in Agronomy and Applied Meteorology, connecting agricultural data, climate, and analytical
+              products to support technical decision-making.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">About</span>
+          <h2 id="about-title">Data applied to real agricultural operations.</h2>
+          <p>
+            I build end-to-end data workflows, from extraction and standardization to delivering
+            analyses, dashboards, and models that support technical decisions.
+          </p>
+        </div>
+
+        <div class="split-grid">
+          <article class="card">
+            <h3>Professional focus</h3>
+            <p>
+              I work with integration of spreadsheets, PDFs, APIs, and structured databases, creating Python and SQL
+              processes to organize field data, automate routines, and reduce manual work in recurring analyses.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Highlights</h3>
+            <ul>
+              <li>ETL for heterogeneous agricultural data from varied source formats.</li>
+              <li>Automation of reports and data validation routines.</li>
+              <li>Dashboards for operational monitoring and KPI communication.</li>
+              <li>Machine learning models for agricultural recommendations and decision support.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Skills</span>
+          <h2 id="skills-title">Tools and technical competencies.</h2>
+          <p>
+            Stack organized by delivery type: analysis, data engineering, machine learning, visualization,
+            analytical products, and applied research.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="card skill-card">
+            <h3 class="skill-title"><span class="marker"></span>Languages and Libraries</h3>
+            <p>Core foundation for data analysis, automation, modeling, and visualization.</p>
+            <div class="skill-list">
+              <span class="skill-chip">Python</span>
+              <span class="skill-chip">R</span>
+              <span class="skill-chip">SQL</span>
+              <span class="skill-chip">Pandas</span>
+              <span class="skill-chip">NumPy</span>
+              <span class="skill-chip">Scikit-learn</span>
+              <span class="skill-chip">Matplotlib</span>
+              <span class="skill-chip">Plotly</span>
+            </div>
+          </article>
+
+          <article class="card skill-card">
+            <h3 class="skill-title"><span class="marker"></span>Data and ETL</h3>
+            <p>Integration of heterogeneous data, validation, and standardization for operational use.</p>
+            <div class="skill-list">
+              <span class="skill-chip">ETL / ELT</span>
+              <span class="skill-chip">APIs</span>
+              <span class="skill-chip">Excel</span>
+              <span class="skill-chip">Google Sheets</span>
+              <span class="skill-chip">PDF extraction</span>
+              <span class="skill-chip">Validation</span>
+              <span class="skill-chip">Standardization</span>
+            </div>
+          </article>
+
+          <article class="card skill-card">
+            <h3 class="skill-title"><span class="marker"></span>Machine Learning</h3>
+            <p>Supervised modeling, model evaluation, and support for technical recommendations.</p>
+            <div class="skill-list">
+              <span class="skill-chip">Regression</span>
+              <span class="skill-chip">Classification</span>
+              <span class="skill-chip">Random Forest</span>
+              <span class="skill-chip">Decision Tree</span>
+              <span class="skill-chip">Feature Engineering</span>
+              <span class="skill-chip">Metrics</span>
+            </div>
+          </article>
+
+          <article class="card skill-card">
+            <h3 class="skill-title"><span class="marker"></span>Dashboards and Products</h3>
+            <p>Analytical interfaces, automated reports, and applications for technical teams.</p>
+            <div class="skill-list">
+              <span class="skill-chip">Streamlit</span>
+              <span class="skill-chip">Power BI</span>
+              <span class="skill-chip">Dashboards</span>
+              <span class="skill-chip">FastAPI</span>
+              <span class="skill-chip">Next.js</span>
+              <span class="skill-chip">ReportLab</span>
+            </div>
+          </article>
+
+          <article class="card skill-card">
+            <h3 class="skill-title"><span class="marker"></span>Databases, Deploy, and Operations</h3>
+            <p>Persistence, application publishing, and delivery environment management.</p>
+            <div class="skill-list">
+              <span class="skill-chip">PostgreSQL</span>
+              <span class="skill-chip">MySQL</span>
+              <span class="skill-chip">SQL Server</span>
+              <span class="skill-chip">SQLite</span>
+              <span class="skill-chip">Vercel</span>
+              <span class="skill-chip">Render</span>
+              <span class="skill-chip">Docker</span>
+            </div>
+          </article>
+
+          <article class="card skill-card">
+            <h3 class="skill-title"><span class="marker"></span>Research and Communication</h3>
+            <p>Quantitative analysis, technical interpretation, and documentation for decision-making.</p>
+            <div class="skill-list">
+              <span class="skill-chip">Time Series</span>
+              <span class="skill-chip">Statistics</span>
+              <span class="skill-chip">Environmental Data</span>
+              <span class="skill-chip">Remote Sensing</span>
+              <span class="skill-chip">Documentation</span>
+              <span class="skill-chip">Reports</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Projects</span>
+          <h2 id="projects-title">Relevant projects.</h2>
+          <p>
+            Projects focused on applied data science, automation, validation, and visualization of agricultural
+            and operational information. The descriptions below summarize applications developed in a corporate
+            environment, without exposing code, sensitive data, or internal information.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="card project-card">
+            <div class="project-number">Project 01</div>
+            <h3>LIBS Report System</h3>
+            <div class="project-block">
+              <strong>Application</strong>
+              <p>
+                Application to transform raw LIBS soil analysis spreadsheets into standardized internal reports,
+                with preprocessing, filling, interpolation, and Excel export steps.
+              </p>
+            </div>
+            <div class="project-block">
+              <strong>Technical foundation</strong>
+              <p>Python, Streamlit, Pandas, openpyxl, XlsxWriter, bcrypt authentication, pytest testing, and Excel export.</p>
+            </div>
+            <div class="project-block">
+              <strong>Expected outcome</strong>
+              <p>Reduction of manual steps in report generation, greater spreadsheet standardization, and traceability between input and output data.</p>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-number">Project 02</div>
+            <h3>Chemical Inventory Control</h3>
+            <div class="project-block">
+              <strong>Application</strong>
+              <p>
+                Operational system for laboratory chemical reagent stock control, including item registration,
+                batches, movements, consumption, solutions, alerts, and data export.
+              </p>
+            </div>
+            <div class="project-block">
+              <strong>Technical foundation</strong>
+              <p>FastAPI, SQLAlchemy, Pydantic, SQLite/PostgreSQL, Next.js, TypeScript, Tailwind CSS, MUI, Recharts, and Docker.</p>
+            </div>
+            <div class="project-block">
+              <strong>Expected outcome</strong>
+              <p>Centralized inventory, movement traceability, and support for shelf life, criticality, and reagent consumption control.</p>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-number">Project 03</div>
+            <h3>Fertilizer Recommendation Calculator 2.0</h3>
+            <div class="project-block">
+              <strong>Application</strong>
+              <p>
+                Web tool to generate liming, gypsum, phosphorus, and potassium recommendations from soil
+                analysis spreadsheets and configurable agronomic parameters.
+              </p>
+            </div>
+            <div class="project-block">
+              <strong>Technical foundation</strong>
+              <p>Python, FastAPI, Pandas, agronomic rules engine, Next.js, React, MUI, Vercel, Render, and Excel/CSV export.</p>
+            </div>
+            <div class="project-block">
+              <strong>Expected outcome</strong>
+              <p>Standardization of technical recommendations, generation of per-field demands, and organization of the commercial product and source catalog.</p>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-number">Project 04</div>
+            <h3>GHG Emissions Calculator</h3>
+            <div class="project-block">
+              <strong>Application</strong>
+              <p>
+                Application to quantify greenhouse gas emissions in agricultural and livestock systems,
+                with spreadsheet upload, automatic validation, detailed IPCC methodology calculation, KPI
+                dashboards, and future scenario simulation.
+              </p>
+            </div>
+            <div class="project-block">
+              <strong>Technical foundation</strong>
+              <p>Python, Streamlit, Pandas, Altair, openpyxl, ReportLab, pytest, Streamlit caching, and CSV, Excel, and PDF export.</p>
+            </div>
+            <div class="project-block">
+              <strong>Expected outcome</strong>
+              <p>Automation of emissions calculation, visualization of results by client, farm, crop, and season, plus auditable reports for technical analysis.</p>
+            </div>
+          </article>
+        </div>
+
+        <p class="project-note">
+          Projects developed in a corporate context. Repositories, data, and internal details are private.
+        </p>
+      </div>
+    </section>
+
+    <section id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Experience</span>
+          <h2 id="experience-title">Professional experience and research.</h2>
+          <p>
+            A career path connecting applied data science to agribusiness, climate analysis, automation,
+            analytical products, and applied meteorology research.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-label">Jul/2025 - present</div>
+            <div>
+              <h3>Data Scientist — Agrorobótica</h3>
+              <p>
+                Development of data products and analytical solutions for agribusiness, carbon accounting,
+                and operational decision support.
+              </p>
+              <ul>
+                <li>Management of data projects for agricultural sector clients, with complex multi-source data workflows.</li>
+                <li>Development of ETL pipelines in Python for extraction, standardization, validation, and quality control.</li>
+                <li>Creation of analytical solutions, machine learning models, real-time dashboards, and internal automations.</li>
+                <li>Use of Streamlit, Vercel, and Render to deliver analytical tools and automated reports.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-label">2020 - 2023</div>
+            <div>
+              <h3>Climate and Agricultural Data Analyst — BASF</h3>
+              <p>
+                Analysis of climate and agricultural data to support agronomic and operational decision-making
+                across different crops and regions of Brazil.
+              </p>
+              <ul>
+                <li>Execution of exploratory analyses on nationwide meteorological and agricultural databases.</li>
+                <li>Recurring production of analytical reports with insights for technical and operational use.</li>
+                <li>Development of dashboards in Power BI and Streamlit for indicator visualization and monitoring.</li>
+                <li>Use of Python, Pandas, and Matplotlib for data processing, analysis, and visualization.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-label">2021 - present</div>
+            <div>
+              <h3>PhD Researcher — Universidade Federal de Viçosa</h3>
+              <p>
+                Research in Applied Meteorology focusing on micrometeorological data, remote sensing, and
+                energy balance methods.
+              </p>
+              <ul>
+                <li>Automation of micrometeorological data processing workflows in Python.</li>
+                <li>Evapotranspiration partitioning analyses integrating remote sensing and energy balance.</li>
+                <li>Production of technical documentation and scientific reports with reproducible research practices.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-label">2019 - 2021</div>
+            <div>
+              <h3>MSc Researcher — Universidade Federal de Viçosa</h3>
+              <p>
+                Research in Applied Meteorology with time series analysis, statistical modeling, and
+                agricultural data.
+              </p>
+              <ul>
+                <li>Application of regression and panel data to relate meteorological variables and crop yield.</li>
+                <li>Database structuring, statistical analyses, and visualizations in R and Python.</li>
+                <li>Preparation of reports and technical materials for academic and specialized audiences.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="education-heading">Education</h3>
+        <div class="education-grid">
+          <article class="card">
+            <h3>PhD in Applied Meteorology</h3>
+            <p>Universidade Federal de Viçosa</p>
+            <p>2021 - present</p>
+          </article>
+
+          <article class="card">
+            <h3>MSc in Applied Meteorology</h3>
+            <p>Universidade Federal de Viçosa</p>
+            <p>2019 - 2021</p>
+          </article>
+
+          <article class="card">
+            <h3>Bachelor's in Agronomic Engineering</h3>
+            <p>Universidade Federal de Alagoas</p>
+            <p>2013 - 2019</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-panel">
+          <div>
+            <span class="section-kicker">Contact</span>
+            <h2 id="contact-title">Let's talk about data, product, and agribusiness.</h2>
+            <p>
+              For opportunities in Data Science, Analytics Engineering, automation, dashboards, or projects applied to
+              agribusiness, use the channels below.
+            </p>
+          </div>
+
+          <div class="contact-links" aria-label="Contact links">
+            <a class="button button-primary" href="mailto:claudio.soriano1@outlook.com">claudio.soriano1@outlook.com</a>
+            <a class="button" href="https://www.linkedin.com/in/claudio-soriano1/" target="_blank" rel="noopener">LinkedIn: claudio-soriano1</a>
+            <a class="button" href="https://github.com/zSoriano" target="_blank" rel="noopener">GitHub: zSoriano</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Claudio Soriano. HTML and CSS portfolio for GitHub Pages.</p>
+    </div>
+  </footer>
+</body>
+</html>
